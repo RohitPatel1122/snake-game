@@ -166,7 +166,6 @@ function stopGame() {
 }
 function updateHighScore() {
   const currentScore = snake.length - 1;
-  console.log(currentScore + ":" + highScore);
   if (currentScore > highScore) {
     highScore = currentScore;
     highScoreText.textContent = highScore.toString().padStart(3, "0");
