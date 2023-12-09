@@ -45,7 +45,10 @@ function setPosition(element, position) {
 
 function drawFood() {
   if (gameStarted) {
-    const foodElement = createElement("div", "food");
+    const foodElement = document.createElement("img");
+    foodElement.src = "rat.png";
+    foodElement.style.width = "20px";
+    foodElement.style.height = "20px";
     setPosition(foodElement, food);
     gameBoard.appendChild(foodElement);
   }
